@@ -40,3 +40,8 @@
 ![Screenshot 2023-04-21 055214](https://user-images.githubusercontent.com/88041827/233530918-4f6c1126-0679-49c3-aa70-e3cd84f70ee0.png)
 ![Screenshot 2023-04-21 055235](https://user-images.githubusercontent.com/88041827/233530919-9fc88a2d-8b89-49e3-a725-90a7e75a2566.png)
 ![Screenshot 2023-04-21 060947](https://user-images.githubusercontent.com/88041827/233530922-1a62c1c7-ccb4-4227-8e87-eae5924875bb.png)
+
+
+<h3> Reference  </h3>
+
+https://www.web3.university/tracks/build-your-first-nft/how-to-create-an-nft
