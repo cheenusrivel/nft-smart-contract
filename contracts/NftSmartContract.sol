@@ -13,7 +13,7 @@ contract NftSmartContract is ERC721, Ownable {
     uint public constant MAX_TOKENS = 10000;
     uint256 public price = 0.001 ether;
     uint private constant MINT_TOKENS = 5;
-    uint256 public constant MAX_MINT_PER_WALLET = 1;
+    uint256 public constant MAX_MINT_PER_WALLET = 10;
 
     uint256 public totalSupply;
     mapping(address => uint256) private mintedPerWallet;
@@ -30,7 +30,7 @@ contract NftSmartContract is ERC721, Ownable {
             external payable {
         require(startDate < today, "Mint duration not only valid");
         require(endDate > today, "Mint duration not only valid");
-        require(mintedPerWallet[recipient] < MAX_MINT_PER_WALLET, "Mint only once for each wallet");
+        require(mintedPerWallet[recipient] < MAX_MINT_PER_WALLET, "Mint only 10 for each wallet");
         uint256 curTotalSupply = totalSupply;
         require(curTotalSupply + MINT_TOKENS <= MAX_TOKENS, "Exceeds total supply.");
     
